@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Voler Admin Dashboard</title>
+
+
+    <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="../../assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+    <link rel="shortcut icon" href="../../assets/images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class='active'>
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header">
+                    <img src="../../assets/images/logo.png" alt="" width="50">
+                    <h6>E-Rapor <br>SMK Persis 02 Kota Bandung</h4>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+
+
+                        <li class='sidebar-title'>Main Menu</li>
+
+
+
+                        <li class="sidebar-item">
+                            <a href="../../index.html" class='sidebar-link'>
+                                <i data-feather="home" width="20"></i>
+                                <span>Dashboard</span>
+                            </a>
+
+                        </li>
+
+
+
+                        <li class='sidebar-title'>Data Master</li>
+                        <li class="sidebar-item  has-sub">
+                            <a href="admin_walikelas/penilaian_sikap.html" class='sidebar-link'>
+                                <i data-feather="hard-drive" width="20"></i>
+                                <span>Kelola data Wali Kelas</span>
+                            </a>
+
+                            <ul class="submenu ">
+
+                                <li>
+                                    <a href="../data_master/wali_kelas/data_wali.html">Data Wali Kelas</a>
+                                </li>
+
+                                <li>
+                                    <a href="../data_master/wali_kelas/bank_pelajaran.html">Bank Pelajaran</a>
+                                </li>
+
+                                <li>
+                                    <a href="../data_master/wali_kelas/semester.html">Semester</a>
+                                </li>
+
+                                <li>
+                                    <a href="../data_master/wali_kelas/jurusan.html">Jurusan</a>
+                                </li>
+
+                                <li>
+                                    <a href="../data_master/wali_kelas/kelas.html">Kelas</a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="admin_walikelas/penilaian_sikap.html" class='sidebar-link'>
+                                <i data-feather="hard-drive" width="20"></i>
+                                <span>Kelola data Guru</span>
+                            </a>
+
+                            <ul class="submenu ">
+
+                                <li>
+                                    <a href="../data_master/guru/data_guru.html">Data Guru</a>
+                                </li>
+
+                                <li>
+                                    <a href="../data_master/guru/mata_pelajaran.html">Mata Pelajaran</a>
+                                </li>
+
+                                <li>
+                                    <a href="../data_master/guru/kkm_nilai.html">KKM Nilai</a>
+                                </li>
+                            </ul>
+
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="admin_walikelas/penilaian_sikap.html" class='sidebar-link'>
+                                <i data-feather="hard-drive" width="20"></i>
+                                <span>Kelola data Siswa</span>
+                            </a>
+
+                            <ul class="submenu ">
+
+                                <li>
+                                    <a href="../data_master/siswa/data_siswa.html">Data Siswa</a>
+                                </li>
+                            </ul>
+
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="admin_walikelas/penilaian_sikap.html" class='sidebar-link'>
+                                <i data-feather="hard-drive" width="20"></i>
+                                <span>Kelola data Orangtua</span>
+                            </a>
+
+                            <ul class="submenu ">
+
+                                <li>
+                                    <a href="../data_master/orangtua/data_orangtua.html">Data Orangtua</a>
+                                </li>
+                            </ul>
+
+                        </li>
+
+                        <li class='sidebar-title'>Rapor</li>
+
+
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="admin_walikelas/penilaian_sikap.html" class='sidebar-link'>
+                                <i data-feather="edit-3" width="20"></i>
+                                <span>Penilaian Rapor</span>
+                            </a>
+
+                            <ul class="submenu active">
+
+                                <li>
+                                    <a href="penilaian_sikap.html">Penilaian Sikap</a>
+                                </li>
+
+                                <li>
+                                    <a href="pengetahuan_keterampilan.html">Pengetahuan dan Keterampilan</a>
+                                </li>
+
+                                <li>
+                                    <a href="ekstrakulikuler.html">Ekstra Kulikuler</a>
+                                </li>
+
+                                <li>
+                                    <a href="absensi.html">Absensi Kehadiran</a>
+                                </li>
+
+                                <li>
+                                    <a href="prestasi.html">Prestasi</a>
+                                </li>
+
+                                <li>
+                                    <a href="catatan.html">Catatan Wali Kelas</a>
+                                </li>
+                            </ul>
+
+                        </li>
+
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="admin_walikelas/penilaian_sikap.html" class='sidebar-link'>
+                                <i data-feather="edit-3" width="20"></i>
+                                <span>Penilaian Kepesantrenan</span>
+                            </a>
+
+                            <ul class="submenu">
+
+                                <li>
+                                    <a href="../rapor_pesantren/nilai_pesantren.html">Nilai Kepesantrenan</a>
+                                </li>
+
+                                <li>
+                                    <a href="../rapor_pesantren/catatan_pesantren.html">Catatan Kepesantrenan</a>
+                                </li>
+
+                                <li>
+                                    <a href="../rapor_pesantren/pengembangan_diri.html">Pengembangan Diri dan Kepribadian</a>
+                                </li>
+
+                                <li>
+                                    <a href="../rapor_pesantren/ekstrakulikuler_pesantren.html">Ekstra Kurikuler Kepesantrenan</a>
+                                </li>
+
+                                <li>
+                                    <a href="../rapor_pesantren/absensi_pesantren.html">Ketidakhadiran</a>
+                                </li>
+
+                                <li>
+                                    <a href="../rapor_pesantren/keterangan_lulus.html">Keterangan Kelulusan</a>
+                                </li>
+                            </ul>
+
+                        </li>
+
+
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+        <div id="main">
+            <nav class="navbar navbar-header navbar-expand navbar-light">
+                <a class="sidebar-toggler" href="#"><span class="navbar-toggler-icon"></span></a>
+                <button class="btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-flex align-items-center navbar-light ms-auto">
+                        <li class="dropdown nav-icon">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-link  dropdown-toggle nav-link-lg nav-link-user">
+                                <div class="d-lg-inline-block">
+                                    <i data-feather="bell"></i>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-large">
+                                <h6 class='py-2 px-4'>Notifications</h6>
+                                <ul class="list-group rounded-none">
+                                    <li class="list-group-item border-0 align-items-start">
+                                        <div class="avatar bg-success me-3">
+                                            <span class="avatar-content"><i data-feather="shopping-cart"></i></span>
+                                        </div>
+                                        <div>
+                                            <h6 class='text-bold'>New Order</h6>
+                                            <p class='text-xs'>
+                                                An order made by Ahmad Saugi for product Samsung Galaxy S69
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown nav-icon me-2">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                                <div class="d-lg-inline-block">
+                                    <i data-feather="mail"></i>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="#"><i data-feather="user"></i> Account</a>
+                                <a class="dropdown-item active" href="#"><i data-feather="mail"></i> Messages</a>
+                                <a class="dropdown-item" href="#"><i data-feather="settings"></i> Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i data-feather="log-out"></i> Logout</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                                <div class="avatar me-1">
+                                    <img src="../../assets/images/avatar/avatar-s-1.png" alt="" srcset="">
+                                </div>
+                                <div class="d-none d-md-block d-lg-inline-block">Hi, Saugi</div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="#"><i data-feather="user"></i> Account</a>
+                                <a class="dropdown-item active" href="#"><i data-feather="mail"></i> Messages</a>
+                                <a class="dropdown-item" href="#"><i data-feather="settings"></i> Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i data-feather="log-out"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="main-content container-fluid">
+                <div class="page-title">
+                    <h3>Prestasi</h3>
+                    <!-- <div class="d-flex align-items-start justify-content-start">
+                    </div> -->
+                </div>
+                <section class="section">
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                            <h6>Tahun Ajaran</h6>
+                            <div class="form-group">
+                                <select class="form-select">
+                                    <option value="square">2020 / 2021</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <h6>Kelas</h6>
+                            <div class="form-group">
+                                <select class="form-select">
+                                    <option value="square">X</option>
+                                    <option value="rectangle">XI</option>
+                                    <option value="rombo">XII</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <h6>Jurusan</h6>
+                            <div class="form-group">
+                                <select class="form-select">
+                                    <option value="square">AKB</option>
+                                    <option value="rectangle">TKJ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <h6>Semester</h6>
+                            <div class="form-group">
+                                <select class="form-select">
+                                    <option value="square">IV / Genap</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-2">
+                            <h6>Nama Siswa</h6>
+                            <div class="form-group">
+                                <select class="choices form-select">
+                                    <option value="square">Wildan</option>
+                                    <option value="rectangle">Aldiansyah</option>
+                                    <option value="rombo">Reno</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider">
+                        <div class="divider-text" style="background-color:#f7faff;">Prestasi</div>
+                    </div>
+                    <div class="row">
+                        <div class="d-flex align-items-center mb-3">
+                            <a href="" class="btn btn-primary">Tambah Prestasi</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card">
+                            <div class="card-body">
+                                <table class='table table-striped'>
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Jenis Prestasi</th>
+                                            <th>Keterangan</th>
+                                            <th class="text-center">Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td class="text-center">
+                                                <a href="" class="btn btn-success">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>                                                    Edit</a>
+                                                <a href="" class="btn btn-danger">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>                                                    Hapus</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+    </section>
+    </div>
+
+    <footer>
+        <div class="footer clearfix mb-0 text-muted">
+            <div class="float-start">
+                <p>2020 &copy; Voler</p>
+            </div>
+            <div class="float-end">
+                <p>Crafted with <span class='text-danger'><i data-feather="heart"></i></span> by <a href="http://ahmadsaugi.com">Ahmad Saugi</a></p>
+            </div>
+        </div>
+    </footer>
+    </div>
+    </div>
+    <script src="../../assets/js/feather-icons/feather.min.js"></script>
+    <script src="../../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../../assets/js/app.js"></script>
+
+    <script src="../../assets/js/pages/dashboard.js"></script>
+
+    <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Voler Admin Dashboard</title>
+
+
+    <!-- Include Choices CSS -->
+    <link rel="stylesheet" href="../../assets/vendors/choices.js/choices.min.css" />
+    <link rel="stylesheet" href="../../assets/vendors/quill/quill.bubble.css">
+    <link rel="stylesheet" href="../../assets/vendors/quill/quill.snow.css">
+
+    <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="../../assets/vendors/chartjs/Chart.min.css">
+
+    <link rel="stylesheet" href="../../assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+    <link rel="shortcut icon" href="../../assets/images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class='active'>
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header">
+                    <img src="../../assets/images/logo.png" alt="" width="50">
+                    <h6>E-Rapor <br>SMK Persis 02 Kota Bandung</h4>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+
+
+                        <li class='sidebar-title'>Main Menu</li>
+
+
+
+                        <li class="sidebar-item">
+                            <a href="../../index.html" class='sidebar-link'>
+                                <i data-feather="home" width="20"></i>
+                                <span>Dashboard</span>
+                            </a>
+
+                        </li>
+
+
+
+                        <li class='sidebar-title'>Data Master</li>
+                        <li class="sidebar-item  has-sub">
+                            <a href="admin_walikelas/penilaian_sikap.html" class='sidebar-link'>
+                                <i data-feather="hard-drive" width="20"></i>
+                                <span>Kelola data Wali Kelas</span>
+                            </a>
+
+                            <ul class="submenu ">
+
+                                <li>
+                                    <a href="../data_master/wali_kelas/data_wali.html">Data Wali Kelas</a>
+                                </li>
+
+                                <li>
+                                    <a href="../data_master/wali_kelas/bank_pelajaran.html">Bank Pelajaran</a>
+                                </li>
+
+                                <li>
+                                    <a href="../data_master/wali_kelas/semester.html">Semester</a>
+                                </li>
+
+                                <li>
+                                    <a href="../data_master/wali_kelas/jurusan.html">Jurusan</a>
+                                </li>
+
+                                <li>
+                                    <a href="../data_master/wali_kelas/kelas.html">Kelas</a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="admin_walikelas/penilaian_sikap.html" class='sidebar-link'>
+                                <i data-feather="hard-drive" width="20"></i>
+                                <span>Kelola data Guru</span>
+                            </a>
+
+                            <ul class="submenu ">
+
+                                <li>
+                                    <a href="../data_master/guru/data_guru.html">Data Guru</a>
+                                </li>
+
+                                <li>
+                                    <a href="../data_master/guru/mata_pelajaran.html">Mata Pelajaran</a>
+                                </li>
+
+                                <li>
+                                    <a href="../data_master/guru/kkm_nilai.html">KKM Nilai</a>
+                                </li>
+                            </ul>
+
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="admin_walikelas/penilaian_sikap.html" class='sidebar-link'>
+                                <i data-feather="hard-drive" width="20"></i>
+                                <span>Kelola data Siswa</span>
+                            </a>
+
+                            <ul class="submenu ">
+
+                                <li>
+                                    <a href="../data_master/siswa/data_siswa.html">Data Siswa</a>
+                                </li>
+                            </ul>
+
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="admin_walikelas/penilaian_sikap.html" class='sidebar-link'>
+                                <i data-feather="hard-drive" width="20"></i>
+                                <span>Kelola data Orangtua</span>
+                            </a>
+
+                            <ul class="submenu ">
+
+                                <li>
+                                    <a href="../data_master/orangtua/data_orangtua.html">Data Orangtua</a>
+                                </li>
+                            </ul>
+
+                        </li>
+
+                        <li class='sidebar-title'>Rapor</li>
+
+
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="admin_walikelas/penilaian_sikap.html" class='sidebar-link'>
+                                <i data-feather="edit-3" width="20"></i>
+                                <span>Penilaian Rapor</span>
+                            </a>
+
+                            <ul class="submenu active">
+
+                                <li>
+                                    <a href="penilaian_sikap.html">Penilaian Sikap</a>
+                                </li>
+
+                                <li>
+                                    <a href="pengetahuan_keterampilan.html">Pengetahuan dan Keterampilan</a>
+                                </li>
+
+                                <li>
+                                    <a href="ekstrakulikuler.html">Ekstra Kulikuler</a>
+                                </li>
+
+                                <li>
+                                    <a href="absensi.html">Absensi Kehadiran</a>
+                                </li>
+
+                                <li>
+                                    <a href="prestasi.html">Prestasi</a>
+                                </li>
+
+                                <li>
+                                    <a href="catatan.html">Catatan Wali Kelas</a>
+                                </li>
+                            </ul>
+
+                        </li>
+
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="admin_walikelas/penilaian_sikap.html" class='sidebar-link'>
+                                <i data-feather="edit-3" width="20"></i>
+                                <span>Penilaian Kepesantrenan</span>
+                            </a>
+
+                            <ul class="submenu">
+
+                                <li>
+                                    <a href="../rapor_pesantren/nilai_pesantren.html">Nilai Kepesantrenan</a>
+                                </li>
+
+                                <li>
+                                    <a href="../rapor_pesantren/catatan_pesantren.html">Catatan Kepesantrenan</a>
+                                </li>
+
+                                <li>
+                                    <a href="../rapor_pesantren/pengembangan_diri.html">Pengembangan Diri dan Kepribadian</a>
+                                </li>
+
+                                <li>
+                                    <a href="../rapor_pesantren/ekstrakulikuler_pesantren.html">Ekstra Kurikuler Kepesantrenan</a>
+                                </li>
+
+                                <li>
+                                    <a href="../rapor_pesantren/absensi_pesantren.html">Ketidakhadiran</a>
+                                </li>
+
+                                <li>
+                                    <a href="../rapor_pesantren/keterangan_lulus.html">Keterangan Kelulusan</a>
+                                </li>
+                            </ul>
+
+                        </li>
+
+
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+        <div id="main">
+            <nav class="navbar navbar-header navbar-expand navbar-light">
+                <a class="sidebar-toggler" href="#"><span class="navbar-toggler-icon"></span></a>
+                <button class="btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-flex align-items-center navbar-light ms-auto">
+                        <li class="dropdown nav-icon">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-link  dropdown-toggle nav-link-lg nav-link-user">
+                                <div class="d-lg-inline-block">
+                                    <i data-feather="bell"></i>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-large">
+                                <h6 class='py-2 px-4'>Notifications</h6>
+                                <ul class="list-group rounded-none">
+                                    <li class="list-group-item border-0 align-items-start">
+                                        <div class="avatar bg-success me-3">
+                                            <span class="avatar-content"><i data-feather="shopping-cart"></i></span>
+                                        </div>
+                                        <div>
+                                            <h6 class='text-bold'>New Order</h6>
+                                            <p class='text-xs'>
+                                                An order made by Ahmad Saugi for product Samsung Galaxy S69
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown nav-icon me-2">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                                <div class="d-lg-inline-block">
+                                    <i data-feather="mail"></i>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="#"><i data-feather="user"></i> Account</a>
+                                <a class="dropdown-item active" href="#"><i data-feather="mail"></i> Messages</a>
+                                <a class="dropdown-item" href="#"><i data-feather="settings"></i> Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i data-feather="log-out"></i> Logout</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                                <div class="avatar me-1">
+                                    <img src="../../assets/images/avatar/avatar-s-1.png" alt="" srcset="">
+                                </div>
+                                <div class="d-none d-md-block d-lg-inline-block">Hi, Saugi</div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="#"><i data-feather="user"></i> Account</a>
+                                <a class="dropdown-item active" href="#"><i data-feather="mail"></i> Messages</a>
+                                <a class="dropdown-item" href="#"><i data-feather="settings"></i> Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i data-feather="log-out"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="main-content container-fluid">
+                <div class="page-title">
+                    <h3>Pengetahuan dan Keterampilan</h3>
+                    <div class="d-flex align-items-start justify-content-start">
+                        <p class="text-subtitle text-muted">Ketuntasan Belajar Minimal :&nbsp;&nbsp;</p> <span class="badge bg-primary">75</span>
+                    </div>
+                </div>
+                <section class="section">
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                            <h6>Tahun Ajaran</h6>
+                            <div class="form-group">
+                                <select class="form-select">
+                                    <option value="square">2020 / 2021</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <h6>Kelas</h6>
+                            <div class="form-group">
+                                <select class="form-select">
+                                    <option value="square">X</option>
+                                    <option value="rectangle">XI</option>
+                                    <option value="rombo">XII</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <h6>Jurusan</h6>
+                            <div class="form-group">
+                                <select class="form-select">
+                                    <option value="square">AKB</option>
+                                    <option value="rectangle">TKJ</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <h6>Semester</h6>
+                            <div class="form-group">
+                                <select class="form-select">
+                                    <option value="square">IV / Genap</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-2">
+                            <h6>Nama Siswa</h6>
+                            <div class="form-group">
+                                <select class="choices form-select">
+                                    <option value="square">Wildan</option>
+                                    <option value="rectangle">Aldiansyah</option>
+                                    <option value="rombo">Reno</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider">
+                        <div class="divider-text" style="background-color:#f7faff;">Pengetahuan dan Keterampilan</div>
+                    </div>
+                    <div class="row">
+                        <a href="" class="btn btn-info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>                            Download Rapor</a>
+                        <div class="card">
+                            <!-- table head dark -->
+                            <div class="table-responsive">
+                                <table class="table table-bordered mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th rowspan="2">no</th>
+                                            <th rowspan="2">Mata Pelajaran</th>
+                                            <th colspan="3">Pengetahuan</th>
+                                            <th colspan="3">Keterampilan</th>
+                                        </tr>
+                                        <tr>
+                                            <th>nilai</th>
+                                            <th>predikat</th>
+                                            <th>deskripsi</th>
+
+                                            <th>nilai</th>
+                                            <th>predikat</th>
+                                            <th>deskripsi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                Pendidikan Agama dan Budi Pekerti
+                                                <span class="badge bg-primary">Wahyudin Setia Gandi, S.Pd.I</span>
+                                            </td>
+                                            <td>78</td>
+                                            <td>C</td>
+                                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, tempore deleniti? Asperiores itaque earum totam. Quidem, assumenda quam! Odit, excepturi.</td>
+
+                                            <td>83</td>
+                                            <td>B</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod asperiores quidem temporibus sapiente possimus deserunt alias architecto, vel reiciendis impedit?</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                Pendidikan Kewarganegaraan
+                                                <span class="badge bg-primary">Wawan Ridwan, S.Pd.I</span>
+                                            </td>
+                                            <td>78</td>
+                                            <td>C</td>
+                                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, tempore deleniti? Asperiores itaque earum totam. Quidem, assumenda quam! Odit, excepturi.</td>
+
+                                            <td>83</td>
+                                            <td>B</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod asperiores quidem temporibus sapiente possimus deserunt alias architecto, vel reiciendis impedit?</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>
+                                                Bahasa Indonesia
+                                                <span class="badge bg-primary">Yulia Herliana, S.Pd</span>
+                                            </td>
+                                            <td>78</td>
+                                            <td>C</td>
+                                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, tempore deleniti? Asperiores itaque earum totam. Quidem, assumenda quam! Odit, excepturi.</td>
+
+                                            <td>83</td>
+                                            <td>B</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod asperiores quidem temporibus sapiente possimus deserunt alias architecto, vel reiciendis impedit?</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>
+                                                Matematika
+                                                <span class="badge bg-primary">Iin Tursilawati, S.Pd.I</span>
+                                            </td>
+                                            <td>78</td>
+                                            <td>C</td>
+                                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, tempore deleniti? Asperiores itaque earum totam. Quidem, assumenda quam! Odit, excepturi.</td>
+
+                                            <td>83</td>
+                                            <td>B</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod asperiores quidem temporibus sapiente possimus deserunt alias architecto, vel reiciendis impedit?</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>
+                                                Bahasa Inggris
+                                                <span class="badge bg-primary">Gian Sugianto, S.Pd.I</span>
+                                            </td>
+                                            <td>78</td>
+                                            <td>C</td>
+                                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, tempore deleniti? Asperiores itaque earum totam. Quidem, assumenda quam! Odit, excepturi.</td>
+
+                                            <td>83</td>
+                                            <td>B</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod asperiores quidem temporibus sapiente possimus deserunt alias architecto, vel reiciendis impedit?</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">Jumlah</td>
+                                            <td>1479</td>
+                                            <td colspan="5">Seribu Empat Ratus Tujuh Puluh Sembilan</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">Rata-rata</td>
+                                            <td>56,88</td>
+                                            <td colspan="5">Lima Puluh Enam Koma Delapan Delapan</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">Peringkat ke</td>
+                                            <td colspan="6">8 dari 9 Siswa</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+    </section>
+    </div>
+
+    <footer>
+        <div class="footer clearfix mb-0 text-muted">
+            <div class="float-start">
+                <p>2020 &copy; Voler</p>
+            </div>
+            <div class="float-end">
+                <p>Crafted with <span class='text-danger'><i data-feather="heart"></i></span> by <a href="http://ahmadsaugi.com">Ahmad Saugi</a></p>
+            </div>
+        </div>
+    </footer>
+    </div>
+    </div>
+    <script src="../../assets/js/feather-icons/feather.min.js"></script>
+    <script src="../../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../../assets/js/app.js"></script>
+
+    <!-- Include Choices JavaScript -->
+    <script src="../../assets/vendors/choices.js/choices.min.js"></script>
+    <script src="../../assets/vendors/quill/quill.min.js"></script>
+    <script src="../../assets/js/pages/form-editor.js"></script>
+
+    <script src="../../assets/vendors/chartjs/Chart.min.js"></script>
+    <script src="../../assets/vendors/apexcharts/apexcharts.min.js"></script>
+    <script src="../../assets/js/pages/dashboard.js"></script>
+
+    <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>
